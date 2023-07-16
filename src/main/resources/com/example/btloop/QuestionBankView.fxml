@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btloop.QuestionBankController">
+    <children>
+      <ScrollPane prefHeight="640.0" prefWidth="1200.0">
+         <content>
+              <AnchorPane prefWidth="1200.0">
+                  <children>
+                      <AnchorPane prefHeight="80.0" prefWidth="1200.0" style="-fx-background-color: #0073a5;">
+                          <children>
+                              <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="1053.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@Image/user.png" />
+                                  </image>
+                              </ImageView>
+                              <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="1115.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@Image/whitearrowdown.png" />
+                                  </image>
+                              </ImageView>
+                              <Label layoutX="923.0" layoutY="26.0" text="User Name" textFill="WHITE">
+                                  <font>
+                                      <Font name="Segoe UI" size="24.0" />
+                                  </font>
+                              </Label>
+                        <ImageView fx:id="btn_menu_return" fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/menu.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                          </children>
+                      </AnchorPane>
+                      <AnchorPane layoutX="60.0" layoutY="80.0" prefHeight="150.0" prefWidth="1080.0" style="-fx-border-color: #AFD3E2;">
+                          <children>
+                              <Label layoutX="40.0" layoutY="20.0" text="IT" textFill="#dd1515">
+                                  <font>
+                                      <Font name="Serif Regular" size="64.0" />
+                                  </font>
+                              </Label>
+                              <Button layoutX="853.0" layoutY="94.0" mnemonicParsing="false" style="-fx-background-color: #0073a5;" text="TURN EDITING ON" textFill="WHITE">
+                                  <font>
+                                      <Font name="Serif Regular" size="20.0" />
+                                  </font>
+                              </Button>
+                              <AnchorPane layoutX="972.0" layoutY="14.0" prefHeight="62.0" prefWidth="81.0">
+                                  <children>
+                                      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="62.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                              <Image url="@Image/redarrowdown.png" />
+                                          </image>
+                                      </ImageView>
+                                      <Button layoutX="-8.0" layoutY="-3.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="46.0" style="-fx-background-color: rgba(0,0,0,0);">
+                                          <font>
+                                              <Font name="Segoe UI" size="20.0" />
+                                          </font>
+                                          <cursor>
+                                              <Cursor fx:constant="HAND" />
+                                          </cursor>
+                                          <graphic>
+                                              <ImageView fitHeight="51.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                                  <image>
+                                                      <Image url="@Image/gear.png" />
+                                                  </image>
+                                              </ImageView>
+                                          </graphic>
+                                      </Button>
+                                  </children>
+                              </AnchorPane>
+                              <HBox layoutX="40.0" layoutY="106.0">
+                                  <children>
+                                      <Label text="Home" textFill="#e22121">
+                                          <font>
+                                              <Font size="20.0" />
+                                          </font>
+                                      </Label>
+                                      <Label text="/">
+                                          <font>
+                                              <Font size="20.0" />
+                                          </font>
+                                          <padding>
+                                              <Insets left="5.0" right="5.0" />
+                                          </padding>
+                                      </Label>
+                                      <Label text="My courses">
+                                          <font>
+                                              <Font size="20.0" />
+                                          </font>
+                                      </Label>
+                                      <Label text="/">
+                                          <font>
+                                              <Font size="20.0" />
+                                          </font>
+                                          <padding>
+                                              <Insets left="5.0" right="5.0" />
+                                          </padding>
+                                      </Label>
+                                      <Label text="THI CUỐI KỲ" textFill="#e22121">
+                                          <font>
+                                              <Font size="20.0" />
+                                          </font>
+                                      </Label>
+                                  </children>
+                              </HBox>
+                          </children>
+                      </AnchorPane>
+                  <TabPane fx:id="tabPane" layoutX="60.0" layoutY="257.0" prefHeight="700.0" prefWidth="1067.0" tabClosingPolicy="UNAVAILABLE" tabMinHeight="40.0" tabMinWidth="100.0">
+                    <tabs>
+                      <Tab text="Questions">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="440.0" prefWidth="1027.0" style="-fx-background-color: a(0,0,0,0); -fx-border-color: #AFD3E2;">
+                                 <children>
+                                    <ComboBox fx:id="btn_category" layoutX="194.0" layoutY="65.0" prefHeight="30.0" prefWidth="126.0" promptText="Default" style="-fx-background-color: transparent; -fx-border-color: #8F959E;" />
+                                    <Label layoutX="25.0" layoutY="14.0" text="Question Bank" textFill="#dd1515">
+                                       <font>
+                                          <Font name="Book Antiqua" size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="25.0" layoutY="66.0" text="Select a category:">
+                                       <font>
+                                          <Font name="Segoe UI" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox layoutX="25.0" layoutY="102.0" prefHeight="400.0" prefWidth="1010.0">
+                                       <children>
+                                          <Label text="The default category for questions shared in context">
+                                             <font>
+                                                <Font name="Segoe UI" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <CheckBox mnemonicParsing="false" prefHeight="35.0" styleClass="box -" text="Also show questions from subcategories">
+                                             <font>
+                                                <Font name="Segoe UI" size="18.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <CheckBox mnemonicParsing="false" prefHeight="35.0" prefWidth="225.0" text="Also show old questions">
+                                             <font>
+                                                <Font name="Segoe UI" size="18.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <Button fx:id="btnCreateQuestion" mnemonicParsing="false" style="-fx-background-color: #009FE5;" styleClass="hover-underline-button" stylesheets="@styles.css" text="CREATE A NEW QUESTION..." textFill="WHITE">
+                                             <font>
+                                                <Font name="Serif Regular" size="20.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                          <AnchorPane prefHeight="200.0" prefWidth="1010.0" visible="false">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="1010.0">
+                                                   <children>
+                                                      <CheckBox mnemonicParsing="false" prefHeight="17.0" prefWidth="29.0" />
+                                                      <VBox prefHeight="40.0" prefWidth="878.0">
+                                                         <children>
+                                                            <Label text="Questions">
+                                                               <font>
+                                                                  <Font name="Segoe UI" size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <HBox prefHeight="100.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <Label text="Question name" textFill="#009fe5">
+                                                                     <font>
+                                                                        <Font name="Segoe UI" size="15.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text=" / ">
+                                                                     <font>
+                                                                        <Font name="Segoe UI" size="15.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label text="ID number" textFill="#009fe5">
+                                                                     <font>
+                                                                        <Font name="Segoe UI" size="15.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </VBox>
+                                                      <Label prefHeight="23.0" prefWidth="76.0" text="Actions">
+                                                         <font>
+                                                            <Font name="Segoe UI" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <ScrollPane prefHeight="200.0" prefWidth="1010.0" style="-fx-background-color: transparent;">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="990.0">
+                                                         <children>
+                                                            <VBox fx:id="listQuestionVBox" prefHeight="200.0" prefWidth="1009.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </ScrollPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                    <TreeView fx:id="category" layoutX="194.0" layoutY="93.0" prefHeight="200.0" prefWidth="310.0" visible="false" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab text="Categories">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="249.0" prefWidth="1027.0" style="-fx-background-color: a(0,0,0,0);">
+                                 <children>
+                                    <VBox prefHeight="681.0" prefWidth="1054.0">
+                                       <children>
+                                          <AnchorPane prefWidth="200.0">
+                                             <children>
+                                                <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="7.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Image/bluearrowdown.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label layoutX="28.0" text="Add category" textFill="#dd1515">
+                                                   <font>
+                                                      <Font name="Book Antiqua" size="36.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="53.0" prefWidth="1054.0">
+                                             <children>
+                                                <Label layoutY="16.0" text="Parent category">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="btnCategory2" layoutX="483.0" layoutY="8.0" prefHeight="40.0" prefWidth="200.0" promptText="Default" />
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="463.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Image/icons8-question-30.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="53.0" prefWidth="1054.0">
+                                             <children>
+                                                <Label layoutY="16.0" text="Name">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="463.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Image/icons8-error-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <TextField fx:id="categoryName" layoutX="483.0" layoutY="8.0" prefHeight="40.0" prefWidth="350.0">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="14.0" />
+                                                   </font></TextField>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="300.0" prefWidth="1054.0">
+                                             <children>
+                                                <Label layoutY="16.0" text="Category info">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextArea fx:id="categoryInfo" layoutX="483.0" layoutY="14.0" prefHeight="289.0" prefWidth="520.0">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="14.0" />
+                                                   </font></TextArea>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="70.0" prefWidth="1054.0">
+                                             <children>
+                                                <Label layoutY="23.0" text="ID number">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="463.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Image/icons8-error-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <TextField fx:id="idNewCategory" layoutX="483.0" layoutY="15.0" prefHeight="40.0" prefWidth="150.0">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="14.0" />
+                                                   </font></TextField>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="53.0" prefWidth="1054.0">
+                                             <children>
+                                                <Button fx:id="btnAddCategory" layoutX="413.0" layoutY="7.0" mnemonicParsing="false" style="-fx-background-color: dd1515;" text="ADD CATEGORY" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Book Antiqua" size="24.0" />
+                                                   </font>
+                                                </Button>
+                                                <Line endX="1000.0" endY="2.0345052689663135E-5" startY="2.0345052689663135E-5" stroke="#0000004d" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="53.0" prefWidth="1054.0">
+                                             <children>
+                                                <Label fx:id="noticeAddCategory" alignment="CENTER" contentDisplay="CENTER" layoutX="330.0" layoutY="18.0" text="There are required fields in this form marked">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="741.0" layoutY="18.0" text=".">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="723.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Image/icons8-error-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                    <TreeView fx:id="categoryTreeView2" layoutX="484.0" layoutY="93.0" prefHeight="250.0" prefWidth="400.0" visible="false" />
+                                 </children></AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Import">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="249.0" prefWidth="1027.0" style="-fx-background-color: a(0,0,0,0);">
+                                 <children>
+                                    <VBox prefHeight="439.0" prefWidth="1137.0">
+                                       <children>
+                                          <AnchorPane prefHeight="0.0" prefWidth="1140.0">
+                                             <children>
+                                                <Label prefHeight="50.0" text="Import questions from file" textFill="RED">
+                                                   <font>
+                                                      <Font name="Book Antiqua" size="30.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="0.0" prefWidth="1140.0">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="1140.0">
+                                                   <children>
+                                                      <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@Image/bluearrowdown.png" />
+                                                         </image>
+                                                         <HBox.margin>
+                                                            <Insets left="20.0" />
+                                                         </HBox.margin>
+                                                      </ImageView>
+                                                      <Label prefWidth="450.0" text="File format" textFill="RED">
+                                                         <font>
+                                                            <Font name="Segoe UI" size="20.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                      <Label text="Aiken format">
+                                                         <font>
+                                                            <Font name="Segoe UI" size="20.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                          <Line endX="1020.0" opacity="0.3" startX="-100.0" />
+                                          <AnchorPane prefWidth="1140.0">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefWidth="1140.0">
+                                                   <children>
+                                                      <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@Image/bluearrowright.png" />
+                                                         </image>
+                                                         <HBox.margin>
+                                                            <Insets left="20.0" />
+                                                         </HBox.margin>
+                                                      </ImageView>
+                                                      <Label text="General" textFill="RED">
+                                                         <font>
+                                                            <Font name="Segoe UI" size="20.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                             </VBox.margin>
+                                          </AnchorPane>
+                                          <Line endX="1020.0" opacity="0.3" startX="-100.0" />
+                                          <AnchorPane prefHeight="50.0" prefWidth="1140.0">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="1140.0">
+                                                   <children>
+                                                      <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@Image/bluearrowdown.png" />
+                                                         </image>
+                                                         <HBox.margin>
+                                                            <Insets left="20.0" />
+                                                         </HBox.margin>
+                                                      </ImageView>
+                                                      <Label text="Import questions from file" textFill="RED">
+                                                         <font>
+                                                            <Font name="Segoe UI" size="20.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="70.0" prefWidth="1140.0">
+                                             <children>
+                                                <HBox prefWidth="1140.0">
+                                                   <children>
+                                                      <Label text="Import">
+                                                         <font>
+                                                            <Font name="Segoe UI" size="20.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                      <VBox prefWidth="668.0">
+                                                         <children>
+                                                            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@Image/icons8-error-64.png" />
+                                                                     </image>
+                                                                     <HBox.margin>
+                                                                        <Insets right="10.0" />
+                                                                     </HBox.margin>
+                                                                  </ImageView>
+                                                                  <Button fx:id="btnChooseFile" mnemonicParsing="false" prefWidth="200.0" style="-fx-background-color: #19A7CE;" text="CHOOSE A FILE" textFill="WHITE">
+                                                                     <font>
+                                                                        <Font name="Segoe UI" size="20.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Label text="Maximum size for new files: 100MB">
+                                                                     <padding>
+                                                                        <Insets left="10.0" />
+                                                                     </padding>
+                                                                     <font>
+                                                                        <Font name="Segoe UI" size="20.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </HBox>
+                                                            <AnchorPane>
+                                                               <children>
+                                                                  <Button mnemonicParsing="false" prefHeight="110.0" prefWidth="550.0" style="-fx-background-color: rgba(0,0,0,0); -fx-border-color: BLACK; -fx-border-width: 0.3px;" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="3.0">
+                                                                     <graphic>
+                                                                        <AnchorPane style="-fx-border-style: dashed; -fx-border-width: 1px;">
+                                                                           <children>
+                                                                              <VBox fx:id="file_not_found" alignment="CENTER" prefHeight="100.0" prefWidth="550.0">
+                                                                                 <children>
+                                                                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                                                       <image>
+                                                                                          <Image url="@Image/dropfile.gif" />
+                                                                                       </image>
+                                                                                    </ImageView>
+                                                                                    <Label text="You can drag and drop files here to add them.">
+                                                                                       <font>
+                                                                                          <Font name="Segoe UI" size="20.0" />
+                                                                                       </font>
+                                                                                    </Label>
+                                                                                 </children>
+                                                                              </VBox>
+                                                                              <Label fx:id="file_name" layoutX="50.0" layoutY="35.0">
+                                                                                 <font>
+                                                                                    <Font size="20.0" />
+                                                                                 </font>
+                                                                              </Label>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </graphic>
+                                                                     <padding>
+                                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                     </padding>
+                                                                  </Button>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                         <HBox.margin>
+                                                            <Insets left="400.0" />
+                                                         </HBox.margin>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox alignment="TOP_CENTER" prefWidth="1100.0">
+                                                   <children>
+                                                      <Button fx:id="btnImport" mnemonicParsing="false" style="-fx-background-color: #dd1515;" text="IMPORT" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="20.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <HBox alignment="CENTER" prefHeight="31.0" prefWidth="1100.0">
+                                                         <children>
+                                                            <Label prefHeight="21.0" text="There are required fields in this form marked">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                               <HBox.margin>
+                                                                  <Insets top="10.0" />
+                                                               </HBox.margin>
+                                                            </Label>
+                                                            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@Image/icons8-error-64.png" />
+                                                               </image>
+                                                               <HBox.margin>
+                                                                  <Insets left="5.0" top="10.0" />
+                                                               </HBox.margin>
+                                                            </ImageView>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                 </children></AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Export">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="249.0" prefWidth="1027.0" style="-fx-background-color: a(0,0,0,0);" />
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+                  </children>
+              </AnchorPane>
+         </content>
+      </ScrollPane>
+    </children>
+</AnchorPane>
