@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btloop.EditQuestionController">
+   <children>
+      <ScrollPane prefHeight="640.0" prefWidth="1200.0">
+         <content>
+            <AnchorPane prefWidth="1200.0">
+               <children>
+                  <AnchorPane prefHeight="80.0" prefWidth="1200.0" style="-fx-background-color: #0073a5;">
+                     <children>
+                        <ImageView fx:id="btn_menu_return" fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/menu.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="60.0" layoutY="80.0" prefHeight="150.0" prefWidth="1080.0" style="-fx-border-color: #AFD3E2;">
+                     <children>
+                        <Label layoutX="40.0" layoutY="20.0" text="IT" textFill="#dd1515">
+                           <font>
+                              <Font name="Serif Regular" size="64.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="40.0" layoutY="106.0">
+                           <children>
+                              <Label text="Home" textFill="#e22121">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="/">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="My courses">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="/">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="THI CUỐI KỲ" textFill="#e22121">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="/">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Question Bank" textFill="#e22121">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="/">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Questions" textFill="#e22121">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="/">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Editing a Multiple choice question">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="60.0" layoutY="257.0" prefHeight="954.0" prefWidth="1071.0" style="-fx-border-color: #AFD3E2 #AFD3E2 #AFD3E2 #AFD3E2;">
+                     <children>
+                        <Label style="-fx-border-color: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;?import javafx.scene.control.Button?&gt;&lt;?import javafx.scene.text.Font?&gt;&lt;Button fx:id=&quot;btn_blankChoice&quot; mnemonicParsing=&quot;false&quot; prefHeight=&quot;45.0&quot; prefWidth=&quot;361.0&quot; style=&quot;-fx-background-color: #19A7CE;&quot; text=&quot;BLANK FOR 3 MORE CHOICE &quot; textFill=&quot;WHITE&quot; xmlns=&quot;http://javafx.com/javafx/20.0.1&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot;&gt;   &lt;font&gt;      &lt;Font name=&quot;Book Antiqua Bold&quot; size=&quot;20.0&quot; /&gt;   &lt;/font&gt;&lt;/Button&gt;;" text="Editing Multiple choise question" textFill="#dd1515" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font name="Book Antiqua" size="35.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </Label>
+                        <GridPane layoutX="60.0" layoutY="100.0" prefHeight="480.0" prefWidth="1010.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="822.6187133789062" minWidth="10.0" prefWidth="439.060546875" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="662.7697143554688" minWidth="10.0" prefWidth="560.939453125" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="160.93572998046875" minHeight="0.0" prefHeight="39.793670654296875" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="413.0" minHeight="5.730255126953125" prefHeight="58.400000000000006" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="646.0153503417969" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="750.7982788085938" minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="785.981689453125" minHeight="10.0" prefHeight="56.16595458984375" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <AnchorPane GridPane.rowSpan="2">
+                                 <children>
+                                    <ImageView fitHeight="15.0" fitWidth="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Image/bluearrowdown.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="17.0" layoutY="2.0" text="General" textFill="#dd1515">
+                                       <font>
+                                          <Font name="Segoe UI" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <Label text="Category" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                 <children>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="410.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Image/icons8-error-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <Label text="Question name" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <TextField fx:id="text_QuestionName" layoutY="7.0" prefHeight="50.0" prefWidth="510.0">
+                                       <font>
+                                          <Font name="Segoe UI" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="123.0" prefWidth="445.0" GridPane.rowIndex="3">
+                                 <children>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="410.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Image/icons8-error-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <Label text="Question text" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+                                 <children>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="410.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Image/icons8-error-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <Label text="Default mark" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane prefHeight="200.0" prefWidth="567.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <children>
+                                    <TextField fx:id="text_DefaultMark" layoutY="10.0" prefHeight="40.0" prefWidth="125.0">
+                                       <font>
+                                          <Font name="Segoe UI" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                              <ComboBox fx:id="kindOfCategory" prefHeight="46.0" prefWidth="327.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <children>
+                                    <VBox fx:id="vBoxAddImage">
+                                       <children>
+                                          <TextArea fx:id="text_QuestionText" prefHeight="145.0" prefWidth="562.0">
+                                             <font>
+                                                <Font name="Segoe UI" size="14.0" />
+                                             </font>
+                                          </TextArea>
+                                       </children>
+                                    </VBox>
+                                    <Button fx:id="btnInsertPicture" layoutX="467.0" layoutY="150.0" mnemonicParsing="false" styleClass="hover-underline-button" stylesheets="@styles.css" text="Insert Picture">
+                                       <font>
+                                          <Font name="Segoe UI" size="12.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                        <VBox fx:id="vBoxAddChoiceBox" layoutX="376.0" layoutY="580.0" prefHeight="200.0">
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane id="gridAddChoice" layoutX="125.0" prefHeight="200.0" prefWidth="580.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="209.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="209.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="283.0" minHeight="10.0" prefHeight="145.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="283.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button fx:id="btn_blankChoice" mnemonicParsing="false" style="-fx-background-color: #19A7CE;" styleClass="hover-underline-button" stylesheets="@styles.css" text="BLANK FOR 3 MORE CHOICE " textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="Book Antiqua Bold" size="20.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="btn_SaveAndContinueEditing" mnemonicParsing="false" style="-fx-background-color: #19A7CE;" styleClass="hover-underline-button" stylesheets="@styles.css" text="SAVE CHANGES AND CONTINUE EDITING" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="Book Antiqua Bold" size="20.0" />
+                                             </font>
+                                          </Button>
+                                          <HBox alignment="CENTER_LEFT" focusTraversable="true" prefHeight="46.0" prefWidth="652.0" spacing="50.0" GridPane.rowIndex="3">
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <children>
+                                                <Button fx:id="btn_SaveAndContinueEditing1" mnemonicParsing="false" style="-fx-background-color: DD1515;" styleClass="hover-underline-button" stylesheets="@styles.css" text="SAVE CHANGES" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="btn_cancel" mnemonicParsing="false" style="-fx-background-color: #19A7CE;" styleClass="hover-underline-button" stylesheets="@styles.css" text="CANCEL" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Book Antiqua Bold" size="20.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                          <Label fx:id="labelAlert" alignment="TOP_LEFT" prefHeight="30.0" prefWidth="353.0" textFill="#ef0404">
+                                             <GridPane.margin>
+                                                <Insets />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ScrollPane>
+   </children>
+</AnchorPane>
