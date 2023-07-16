@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btloop.HomeController">
+   <children>
+      <AnchorPane fx:id="second_pane" prefHeight="640.0" prefWidth="1200.0">
+         <children>
+            <AnchorPane layoutX="60.0" layoutY="265.0" prefHeight="210.0" prefWidth="1080.0" style="-fx-background-color: white; -fx-border-color: #AFD3E2;">
+               <children>
+                  <VBox layoutX="850.0" layoutY="20.0">
+                     <children>
+                        <Button fx:id="btn_question" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: rgba(0,0,0,0); -fx-border-color: #AFD3E2;" styleClass="hover-underline-button" stylesheets="@styles.css" text="Questions" textFill="#19a7ce">
+                           <font>
+                              <Font name="Segoe UI" size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btn_category" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: rgba(0,0,0,0); -fx-border-color: #AFD3E2;" styleClass="hover-underline-button" stylesheets="@styles.css" text="Categories" textFill="#19a7ce">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btn_import" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: rgba(0,0,0,0); -fx-border-color: #AFD3E2;" styleClass="hover-underline-button" stylesheets="@styles.css" text="Import" textFill="#19a7ce">
+                           <font>
+                              <Font name="Segoe UI" size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btn_export" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: rgba(0,0,0,0); -fx-border-color: #AFD3E2;" styleClass="hover-underline-button" stylesheets="@styles.css" text="Export" textFill="#19a7ce">
+                           <font>
+                              <Font name="Segoe UI" size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Label contentDisplay="CENTER" layoutX="84.0" layoutY="41.0" prefHeight="104.0" prefWidth="381.0" text="Question Bank" textAlignment="CENTER" textFill="#19a7ce">
+                     <font>
+                        <Font name="Book Antiqua" size="55.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_back" layoutX="1011.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="67.0" style="-fx-background-color: a(0,0,0,0);" styleClass="hover-underline-button" stylesheets="@styles.css">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/close.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <ScrollPane fx:id="first_pane" prefHeight="640.0" prefWidth="1200.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="640.0" prefWidth="1200.0">
+               <children>
+                  <AnchorPane prefHeight="80.0" prefWidth="1200.0" style="-fx-background-color: #0073a5;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/menu.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="1053.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/user.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="1115.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/whitearrowdown.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="923.0" layoutY="26.0" text="User Name" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="60.0" layoutY="80.0" prefHeight="150.0" prefWidth="1080.0" style="-fx-border-color: #AFD3E2;">
+                     <children>
+                        <Label layoutX="40.0" layoutY="20.0" text="IT" textFill="#dd1515">
+                           <font>
+                              <Font name="Serif Regular" size="64.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_turnEditingOn" layoutX="853.0" layoutY="94.0" mnemonicParsing="false" style="-fx-background-color: #0073a5;" styleClass="hover-underline-button" stylesheets="@styles.css" text="TURN EDITING ON" textFill="WHITE">
+                           <font>
+                              <Font name="Serif Regular" size="20.0" />
+                           </font>
+                        </Button>
+                        <AnchorPane layoutX="972.0" layoutY="14.0" prefHeight="62.0" prefWidth="81.0">
+                           <children>
+                              <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="62.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Image/redarrowdown.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btn_add" layoutX="-8.0" layoutY="-3.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="46.0" style="-fx-background-color: rgba(0,0,0,0);" styleClass="hover-underline-button" stylesheets="@styles.css">
+                                 <font>
+                                    <Font name="Segoe UI" size="20.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <ImageView fitHeight="51.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Image/gear.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <HBox layoutX="40.0" layoutY="106.0">
+                           <children>
+                              <Label text="Home" textFill="#e22121">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="/">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="My courses">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="/">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="THI CUỐI KỲ" textFill="#e22121">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="60.0" layoutY="257.0" prefHeight="420.0" prefWidth="1080.0" style="-fx-border-color: #AFD3E2;">
+                     <children>
+                        <VBox layoutX="20.0" layoutY="20.0" prefHeight="350.0" prefWidth="360.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="68.0" style="-fx-background-color: rgba(0,0,0,0);">
+                                       <graphic>
+                                          <ImageView fitHeight="44.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Image/filecheck.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Label prefHeight="70.0" prefWidth="293.0" text="Kiểm tra cuối kì môn IT4895Q">
+                                       <font>
+                                          <Font name="Segoe UI" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="68.0" style="-fx-background-color: rgba(0,0,0,0);">
+                                       <graphic>
+                                          <ImageView fitHeight="44.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Image/filecheck.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Label prefHeight="70.0" prefWidth="293.0" text="Thi thử KTLT">
+                                       <font>
+                                          <Font name="Segoe UI" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="68.0" style="-fx-background-color: rgba(0,0,0,0);">
+                                       <graphic>
+                                          <ImageView fitHeight="44.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Image/filecheck.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Label prefHeight="70.0" prefWidth="293.0" text="Thi GK2 Tin học 7">
+                                       <font>
+                                          <Font name="Segoe UI" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="68.0" style="-fx-background-color: rgba(0,0,0,0);">
+                                       <graphic>
+                                          <ImageView fitHeight="44.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Image/filecheck.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Label prefHeight="70.0" prefWidth="293.0" text="Thi GK2 Sử Địa 7">
+                                       <font>
+                                          <Font name="Segoe UI" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="68.0" style="-fx-background-color: rgba(0,0,0,0);">
+                                       <graphic>
+                                          <ImageView fitHeight="44.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Image/filecheck.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Label prefHeight="70.0" prefWidth="293.0" text="Thi giữ kỳ 2 môn Công nghệ">
+                                       <font>
+                                          <Font name="Segoe UI" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
