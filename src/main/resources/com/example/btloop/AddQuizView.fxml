@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane>
+         <children>
+            <AnchorPane prefHeight="80.0" prefWidth="1200.0" style="-fx-background-color: #0073a5;">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="1053.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="1115.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/whitearrowdown.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="923.0" layoutY="26.0" text="User Name" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="btn_menu_return" fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/menu.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="60.0" layoutY="100.0" prefHeight="700.0" prefWidth="1053.0" style="-fx-border-color: #AFD3E2;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="1094.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/filecheck.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="Adding a new Quiz" textFill="#dd1515">
+                           <font>
+                              <Font name="Book Antiqua" size="30.0" />
+                           </font>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Image/icons8-error-64.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <AnchorPane layoutX="57.0" layoutY="52.0" prefHeight="641.0" prefWidth="1026.0">
+                     <children>
+                        <VBox prefHeight="629.0" prefWidth="1031.0">
+                           <children>
+                              <HBox prefHeight="50.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Image/bluearrowdown.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets right="10.0" top="15.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Label prefHeight="50.0" text="General" textFill="#dd1515">
+                                       <font>
+                                          <Font name="Segoe UI" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="50.0" prefWidth="1140.0">
+                                 <children>
+                                    <Label prefHeight="50.0" prefWidth="500.0" text="Name">
+                                       <font>
+                                          <Font name="Segoe UI" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane prefHeight="50.0" prefWidth="1013.0">
+                                       <children>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="200.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../../../../oop-main/oop-main/src/main/resources/Img/icons8-error-64.png" />
+                                             </image>
+                                          </ImageView>
+                                          <TextField fx:id="text_quiz_name" layoutX="230.0" layoutY="5.0" prefHeight="40.0" prefWidth="400.0">
+                                             <font>
+                                                <Font name="Segoe UI" size="16.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="50.0" prefWidth="1140.0">
+                                 <children>
+                                    <Label prefHeight="50.0" prefWidth="500.0" text="Description">
+                                       <font>
+                                          <Font name="Segoe UI" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane prefHeight="50.0" prefWidth="1013.0">
+                                       <children>
+                                          <TextField fx:id="text_quiz_description" alignment="TOP_LEFT" layoutX="230.0" layoutY="5.0" prefHeight="170.0" prefWidth="400.0">
+                                             <font>
+                                                <Font name="Segoe UI" size="16.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="50.0" prefWidth="1140.0">
+                                 <children>
+                                    <AnchorPane prefHeight="50.0" prefWidth="1013.0">
+                                       <children>
+                                          <CheckBox fx:id="check_display_description" layoutX="544.0" layoutY="13.0" mnemonicParsing="false" prefHeight="27.0" text="Display description on course page ">
+                                             <font>
+                                                <Font name="Segoe UI" size="15.0" />
+                                             </font>
+                                          </CheckBox>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="810.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Image/icons8-question-30.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="50.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Image/bluearrowdown.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets right="10.0" top="15.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Label prefHeight="50.0" text="Timing" textFill="#dd1515">
+                                       <font>
+                                          <Font name="Segoe UI" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="50.0" prefWidth="1140.0">
+                                 <children>
+                                    <Label prefHeight="50.0" prefWidth="500.0" text="Open the quiz">
+                                       <font>
+                                          <Font name="Segoe UI" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane prefHeight="50.0" prefWidth="1013.0">
+                                       <children>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="200.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Image/icons8-question-30.png" />
+                                             </image>
+                                          </ImageView>
+                                          <DatePicker fx:id="date_open" layoutX="230.0" layoutY="2.0" prefHeight="40.0" prefWidth="245.0" />
+                                          <CheckBox fx:id="checkbox_enable_open" layoutX="500.0" layoutY="15.0" mnemonicParsing="false" text="Enable">
+                                             <font>
+                                                <Font name="Segoe UI" size="12.0" />
+                                             </font>
+                                          </CheckBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="50.0" prefWidth="1140.0">
+                                 <children>
+                                    <Label prefHeight="50.0" prefWidth="500.0" text="Close the quiz">
+                                       <font>
+                                          <Font name="Segoe UI" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane prefHeight="50.0" prefWidth="1013.0">
+                                       <children>
+                                          <DatePicker fx:id="date_close" layoutX="230.0" layoutY="2.0" prefHeight="40.0" prefWidth="245.0" />
+                                          <CheckBox fx:id="checkbox_enable_close" layoutX="500.0" layoutY="15.0" mnemonicParsing="false" text="Enable">
+                                             <font>
+                                                <Font name="Segoe UI" size="12.0" />
+                                             </font>
+                                          </CheckBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="50.0" prefWidth="1140.0">
+                                 <children>
+                                    <Label prefHeight="50.0" prefWidth="500.0" text="Time limit">
+                                       <font>
+                                          <Font name="Segoe UI" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane prefHeight="50.0" prefWidth="1013.0">
+                                       <children>
+                                          <Spinner fx:id="spinner_time_format" layoutX="290.0" layoutY="2.0" prefHeight="40.0" />
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="200.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Image/icons8-question-30.png" />
+                                             </image>
+                                          </ImageView>
+                                          <TextField fx:id="text_time_limit" layoutX="230.0" layoutY="2.0" prefHeight="40.0" prefWidth="50.0" />
+                                          <CheckBox fx:id="checkbox_enable_time_limit" layoutX="460.0" layoutY="15.0" mnemonicParsing="false" text="Enable">
+                                             <font>
+                                                <Font name="Segoe UI" size="12.0" />
+                                             </font>
+                                          </CheckBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="50.0" prefWidth="1140.0">
+                                 <children>
+                                    <Label prefHeight="50.0" prefWidth="500.0" text="When time expires">
+                                       <font>
+                                          <Font name="Segoe UI" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane prefHeight="50.0" prefWidth="1013.0">
+                                       <children>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="200.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Image/icons8-question-30.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Spinner fx:id="spinner_time_expire" editable="true" layoutX="230.0" layoutY="2.0" prefHeight="40.0" prefWidth="300.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="50.0" prefWidth="1140.0">
+                                 <children>
+                                    <AnchorPane prefHeight="50.0" prefWidth="1141.0">
+                                       <children>
+                                          <Button fx:id="btn_create" layoutX="428.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #dd1515;" text="CREATE" textFill="WHITE">
+                                             <font>
+                                                <Font name="Segoe UI" size="20.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="btn_cancel" layoutX="543.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #dd1515;" text="CANCEL" textFill="WHITE">
+                                             <font>
+                                                <Font name="Segoe UI" size="20.0" />
+                                             </font>
+                                          </Button>
+                                          <Label fx:id="alert_missing_name" layoutX="660.0" layoutY="18.0" text="Please enter the quiz's name!" textFill="RED" visible="false">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
