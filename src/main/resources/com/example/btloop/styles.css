@@ -1,0 +1,6 @@
+.hover-underline-button:hover {
+    -fx-underline: true;
+    -fx-border-color:  #AFD3E2; /* Màu viền */
+    -fx-border-width: 1px; /* Độ dày viền */
+    -fx-border-radius: 4px;
+}
